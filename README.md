@@ -61,16 +61,19 @@
 [form_6]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_6.png
 [form_7]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_7.png
 
-1 2  
-![圖片1][form_1] ![圖片2][form_2]
 
-3 4 5  
-![圖片3][form_3] ![圖片4][form_4] ![圖片5][form_5]
+![圖片1][form_1] 
+![圖片2][form_2]
 
-6  
+  
+![圖片3][form_3] 
+![圖片4][form_4] 
+![圖片5][form_5]
+
+  
 ![圖片6][form_6]
 
-7  
+  
 ![圖片7][form_7]
 
 ---
