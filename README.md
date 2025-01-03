@@ -59,6 +59,8 @@
 [record_1]: https://raw.githubusercontent.com/Qarchue/images/master/disform/record_1.png
 [record_2]: https://raw.githubusercontent.com/Qarchue/images/master/disform/record_2.png
 
+[google_sheets]: https://raw.githubusercontent.com/Qarchue/images/master/disform/google_sheets.png
+
 ![表單][form_1] 
 
 ![詳細資料][info_1] 
@@ -66,8 +68,6 @@
 ![刪除][remove_1] 
 
 ![紀錄1][record_1]
-
-![紀錄2][record_2]
 
 ---
 
@@ -120,7 +120,9 @@
 
 <details><summary>>>> 點此查看完整內容 <<<</summary>
 
-1. 可以參考 https://sites.google.com/jes.mlc.edu.tw/ljj/linebot%E5%AF%A6%E5%81%9A/%E7%94%B3%E8%AB%8Bgoogle-sheet-api 來取得 google sheets API 的金鑰與帳戶憑證檔案
+我還沒寫教學
+
+您可以參考 https://sites.google.com/jes.mlc.edu.tw/ljj/linebot%E5%AF%A6%E5%81%9A/%E7%94%B3%E8%AB%8Bgoogle-sheet-api 來取得 google sheets API 的金鑰與帳戶憑證檔案
 
 </details>
 
@@ -216,7 +218,6 @@
 }
 ```
 
-
 ---
 
 
@@ -257,8 +258,15 @@ class Config(BaseSettings):
 ---
 
 
+## google sheets 說明
 
+初次提交表單後，機器人會自動在 google sheets 新增一個工作區用來存放該表單的資料
 
+審核完成欄的勾選方塊如果被勾選，使用者將無法對表單進行任何操作
+
+如果使用者被伺服器踢出，將會刪除該使用者所有未審核的表單資料
+
+![展示][google_sheets] 
 
 ## 專案資料夾結構
 
