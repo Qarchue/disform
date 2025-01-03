@@ -54,27 +54,15 @@
 ## 展示
 
 [form_1]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_1.png
-[form_2]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_2.png
-[form_3]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_3.png
-[form_4]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_4.png
-[form_5]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_5.png
-[form_6]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_6.png
-[form_7]: https://raw.githubusercontent.com/Qarchue/images/master/disform/form_7.png
+[info_1]: https://raw.githubusercontent.com/Qarchue/images/master/disform/info_1.png
+[remove_1]: https://raw.githubusercontent.com/Qarchue/images/master/disform/remove_1.png
+[record_1]: https://raw.githubusercontent.com/Qarchue/images/master/disform/record_1.png
+[record_2]: https://raw.githubusercontent.com/Qarchue/images/master/disform/record_2.png
+
+![表單][form_1] 
 
 
-![圖片1][form_1] 
-![圖片2][form_2]
 
-  
-![圖片3][form_3] 
-![圖片4][form_4] 
-![圖片5][form_5]
-
-  
-![圖片6][form_6]
-
-  
-![圖片7][form_7]
 
 ---
 

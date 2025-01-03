@@ -269,7 +269,13 @@ async def send_form_pages_old(message: discord.Message):
             form_name = form['申請表名稱']
             form_id = form['申請表ID']
             review_result = form['審核結果']
-            review_status = f"審核結果: {review_result}" if form['審核完成'] == "TRUE" else "尚未審核"
+            if form['審核完成'] == "TRUE":
+                if review_result:
+                    review_status = f"審核結果: {review_result}"
+                else:
+                    review_status = f"標記完成"
+            else:
+                review_status = "尚未審核"
             field_value = f"申請表ID: {form_id}\n{review_status}"
             
             if form['審核完成'] == "TRUE":
