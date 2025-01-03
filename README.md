@@ -1,7 +1,6 @@
 # [disform]([https://www.github.com/Qarchue/disform](https://github.com/Qarchue/disform))
 
 <p align="center">
-    <a href="https://github.com/Qarchue/disform/blob/master/LICENSE"><img src="https://img.shields.io/github/license/qarchue/disform"></a>
     <a href="https://github.com/Qarchue/disform"><img src="https://img.shields.io/github/repo-size/Qarchue/disform"></a>
     <a href="https://github.com/Qarchue/disform"><img src="https://img.shields.io/github/languages/top/Qarchue/disform"></a>
     <a href="https://github.com/Qarchue/disform/stargazers"><img src="https://img.shields.io/github/stars/Qarchue/disform?style=socia"></a>
@@ -12,8 +11,9 @@
 
 ## 簡介
 
-這是一個交談式表單填寫系統的Discord機器人，提供使用者在表單介面上填寫資料並提交至後台，並可以查詢或刪除已填寫的表單資料
-表單資料使用Google Sheet進行儲存，提供管理人員方便整理與歸納
+這是一個交談式表單填寫系統的Discord機器人，提供使用者在表單介面上填寫資料並提交至後台，並可以查詢或刪除已填寫的表單資料。
+
+表單資料使用Google Sheet進行儲存，提供管理人員方便整理與歸納。
 
 
 
@@ -24,26 +24,26 @@
 
 
 ## 使用方式
-
-首先，需要先知道命令前綴，並以命令前綴加上命令來完成操作
-以下示範假設命令前綴為 `-`
+私訊機器人特定命令來使用，以命令前綴加上命令來完成操作
+以下示範假設命令前綴為 `-` :
 
 `-(表單命令)`: 填寫表單，表單提交後會顯示表單 ID
 
-`-record`: 查詢已提交的表單，可以透過下方的按鈕進行頁面及分類切換
+`-record`: 查詢已提交的所有表單，可以透過下方的按鈕進行頁面及分類切換
 
-`-reomve (表單 ID)`: 刪除已提交的表單，則無法刪除表單
+`-reomve (表單 ID)`: 刪除已提交的表單
 
 `-info (表單 ID)`: 查詢已提交的表單資料
 
-
-在填寫表單時，您可以透過以下命令來進行操作:
+**在填寫表單時，您可以透過以下命令來進行操作:**  
 
 `-done`: 提交表單(前提是表單已經全部填完)
 
 `-back`: 回到上一個問題重新填寫
 
 `-(問題編號)`: 跳到指定問題填寫
+
+##### *這些命令指示也會在所有題目填完之後跑出來
 
 ---
 
@@ -177,9 +177,9 @@
 `description` 問題描述，為 `embed` 的副標題。   
 `class_check` 需要輸入的資料類型，當輸入問題的回答後會偵測類型是否正確。   
  > 目前存在3個類型:   
-`text`: 文字  
-`position`: 座標，原本用於 minecraft 伺服器申請  
-`image`: 圖片
+- `text`: 文字  
+- `position`: 座標，原本用於 minecraft 伺服器申請  
+- `image`: 圖片
 
 你可以依照個人需求進行修改:
 
@@ -246,7 +246,7 @@ class Config(BaseSettings):
     sheets_key: str = ""
     account_file: str = ""
 
-    custom_command_prefix: str = ""
+    custom_command_prefix: str = "-"
     
     questionnaire_icon_url: str = ""
     #以下省略...
@@ -256,7 +256,7 @@ class Config(BaseSettings):
 `bot_token`: 機器人 Token，從 Discord Developer 網頁取得   
 `sheets_key`: Google Sheets 的 Key   
 `account_file`: Google Sheets 的帳戶憑證檔案   
-`custom_command_prefix`: 自訂指令前綴   
+`custom_command_prefix`: 自訂命令前綴   
 `questionnaire_icon_url`: embed最底下的小icon，可以不填   
 
 ### 編輯完設定檔後記得儲存
@@ -276,11 +276,11 @@ disform/
     │   ├── bot_event/        = discord 事件管理
     │   └── form_cog/         = 表單操作 cog
     │       ├── ui/               = 各種關於 embed 的操作
-    │       │   ├── info.py           = 處理 info 指令
+    │       │   ├── info.py           = 處理 info 命令
     │       │   ├── questionnaire.py  = 表單系統函式庫
-    │       │   ├── records.py        = 處理 record 指令
-    │       │   └── remove.py         = 處理 remove 指令
-    │       ├── cog.py            = 主 cog ，用於處理指令與創建表單
+    │       │   ├── records.py        = 處理 record 命令
+    │       │   └── remove.py         = 處理 remove 命令
+    │       ├── cog.py            = 主 cog ，用於處理命令與創建表單
     │       ├── dataclass.py      = 自訂資料型態，與資料型態偵測
     │       └── embed_message.py  = 標準 embed 函式庫
     ├── forms/            = 表單資料 json 檔案
@@ -322,4 +322,4 @@ https://github.com/CasuallyCalm/discord-pretty-help
 ## 授權
 
 此專案採用 MIT 授權，詳情請參閱 LICENSE 檔案。
-"# disform" 
+
