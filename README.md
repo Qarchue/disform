@@ -120,8 +120,6 @@
 
 <details><summary>>>> 點此查看完整內容 <<<</summary>
 
-我還沒寫教學
-
 您可以參考 https://sites.google.com/jes.mlc.edu.tw/ljj/linebot%E5%AF%A6%E5%81%9A/%E7%94%B3%E8%AB%8Bgoogle-sheet-api 來取得 google sheets API 的金鑰與帳戶憑證檔案
 
 </details>
